@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#grid {
+  display: grid;
+  width: 75%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  column-gap: 10px;
+  row-gap: 15px;
+}
+
+.product {
+  border: 1px solid red;
+  height: 250px;
+}
+
+.product img {
+  width: 100%;
+}
+
+/* .product-item{
+    width: 300px;
+    margin: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+} */
+
+/* .product-bg {
+    background-size: cover;
+    height: 200px;
+} */
