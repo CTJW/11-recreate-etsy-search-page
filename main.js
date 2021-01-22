@@ -14,24 +14,38 @@ const theProductsHTML = theProducts.map(function (item) {
 });
 
 let nav = [
-  `${"Valentine's Day"}  
-  ${"Jewelry & Accessories"} 
-  ${"Clothing"}
-  ${"Home & Living"}
-  ${"Wedding & Party"}
-  ${"Toys & Entertainment"}
-  ${"Art & Collectibles"}
-  ${"Craft & Supplies"},
-  ${"Gifts & Gift Cards"}`,
+  "Valentine's Day",
+  "Jewelry & Accessories",
+  "Clothing",
+  "Home & Living",
+  "Wedding & Party",
+  "Toys & Entertainment",
+  "Art & Collectibles",
+  "Craft & Supplies",
+  "Gifts & Gift Cards",
 ];
 
 let navTitles = nav.map(function (titles) {
   return `<li>${titles}</li>`;
 });
 
-// console.log(theProducts1)
+let dropTitles = [
+  "All Jewelry & Accessories",
+  "Bags & Purses",
+  "Necklaces",
+  "Rings",
+  "Earrings",
+  "Bracelets",
+  "Body Jewelry",
+  "All Jewelry",
+];
 
-document.querySelector("#navTitles").innerHTML = nav.join("");
+let dropDown = dropTitles.map(function (titles) {
+  return `<li>${titles}</li>`;
+});
+
+document.querySelector(".dropDown").innerHTML = dropDown.join("");
+document.querySelector("#navTitles").innerHTML = navTitles.join("");
 document.querySelector("#grid").innerHTML = theProductsHTML.join("");
 
 {

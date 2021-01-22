@@ -5,23 +5,26 @@
 }
 
 body {
-  padding: 40px;
+  padding: 15px 40px 40px 40px;
 }
 
 #nav {
   height: 100px;
   /* width: 100px; */
-  border: 2px solid red;
 }
 
 #navTitles {
-
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  list-style-type: none;
+  padding-top: 15px;
 }
 
 #picBox {
   height: 230px;
   /* width: 100px; */
-  border: 2px solid blue;
+  border: 2px solid rgb(10, 148, 44);
 }
 
 #grid {
@@ -39,8 +42,8 @@ body {
   font-weight: 300;
 }
 
-.price {
-}
+/* .price {
+} */
 
 .product {
   white-space: nowrap;
@@ -74,12 +77,13 @@ body {
 
 #etsy {
   font-family: “Guardian-egyptt”;
-  font-size: 45px;
+  font-size: 40px;
   color: #ff7300;
   text-decoration: none;
 }
 
 #searchBar {
-  height: 50 px;
+  height: 50px;
   width: 85%;
+  border-radius: 30px;
 }
