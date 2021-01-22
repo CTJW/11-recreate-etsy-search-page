@@ -4,23 +4,53 @@
   box-sizing: border-box;
 }
 
+body {
+  padding: 40px;
+}
+
+#nav {
+  height: 100px;
+  /* width: 100px; */
+  border: 2px solid red;
+}
+
+#navTitles {
+
+}
+
+#picBox {
+  height: 230px;
+  /* width: 100px; */
+  border: 2px solid blue;
+}
+
 #grid {
   display: grid;
-  width: 75%;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  align-items: center;
+  /* width: 100%; */
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   column-gap: 10px;
   row-gap: 15px;
 }
 
-.product {
-  border: 1px solid red;
-  height: 250px;
+.title {
+  text-overflow: ellipsis;
+  font-family: "Graphik Webfont", -apple-system, BlinkMacSystemFont, "Roboto";
+  font-size: 14px;
+  font-weight: 300;
 }
 
-.product img {
-  width: 100%;
+.price {
 }
+
+.product {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* .product img {
+  width: 100%;
+} */
 
 /* .product-item{
     width: 300px;
@@ -30,7 +60,26 @@
     text-overflow: ellipsis;
 } */
 
-/* .product-bg {
-    background-size: cover;
-    height: 200px;
-} */
+.product-bg {
+  width: 100%;
+  height: 200px;
+}
+
+html,
+body {
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+#etsy {
+  font-family: “Guardian-egyptt”;
+  font-size: 45px;
+  color: #ff7300;
+  text-decoration: none;
+}
+
+#searchBar {
+  height: 50 px;
+  width: 85%;
+}
