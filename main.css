@@ -22,6 +22,10 @@ body {
   padding-top: 15px;
 }
 
+.stars {
+  border: 2px solid orange;
+}
+
 #picBox {
   height: 230px;
   width: 70%;

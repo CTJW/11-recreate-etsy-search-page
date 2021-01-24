@@ -9,12 +9,12 @@ const theProductsHTML = theProducts.map(function (item) {
  <p class="title">${item.title}</p> 
  <p class="shop">${item.Shop.shop_name}</p>
  
-        <div class="stars">
-        <span class="fa fa-star"></span>
-        <span class="fa fa-star"></span>
-        <span class="fa fa-star"></span>
-        <span class="fa fa-star"></span>
-        <span class="fa fa-star"></span>
+        <div class = "stars">
+        <span class = "fa fa-star"></span>
+        <span class = "fa fa-star"></span>
+        <span class = "fa fa-star"></span>
+        <span class = "fa fa-star"></span>
+        <span class = "fa fa-star"></span>
         </div>
 
         <span class="views"> views (${item.views})</span>
